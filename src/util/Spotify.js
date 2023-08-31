@@ -46,7 +46,7 @@ const Spotify = {
         if (!name || !trackURIs.length) {
             return;
         }
-        const acessToken = Spotify.getAccessToken();
+        const accessToken = Spotify.getAccessToken();
         const headers = { Authorization: `Bearer ${accessToken}`};
         let userID;
         return fetch('https://api.spotify.com/v1/me', { header: headers })
